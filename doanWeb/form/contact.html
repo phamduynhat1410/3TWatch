@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<title>3TWATCH&reg; | Liên Hệ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href='../style.css'>
+
+  <link rel="stylesheet" href='lienhecss.css'>
+</head>
+
+<body>
+	<div class="tim-kiem">
+		<div class="search-container">
+			<table style="margin-left: 1205px">
+				<td>
+				<input type="text" placeholder="Tìm kiếm.." name="search">
+				</td>
+				<td>
+				<button><a href="timkiem.html" style="width: 60px; height: 25px; color: black">Nâng Cao</a></button>
+				</td>
+			</table>
+		</div>
+	</div>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-branch" href='../index.html'>
+					<img src='../images/logo1.png' style="margin-left: 50px"height="60" width="210">
+				</a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a id="trang-chu" class="nav-link " href='../index.html'>TRANG CHỦ</a>
+						</li>
+						<li>
+							<div class="dropdown">
+    							<a style="border-color: #EEEEEE; background-color: #EEEEEE" class="dropdown-toggle"  data-toggle="dropdown" href="#">THƯƠNG HIỆU <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href='../dhocasio.html'>Đồng Hồ Casio</a></li>
+      						<li><a href='../dhoorient.html'>Đồng Hồ Orient</a></li>
+     						<li><a href='../dhocitizen.html'>Đồng Hồ CitiZen</a></li>
+							<li><a href='../dhogshock.html'>Đồng Hồ G-Shock</a></li>
+   						</ul>
+  </div>		
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='../donghonam.html'>NAM</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='../donghonu.html'>NỮ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='contact.html'>LIÊN HỆ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='../login.html'>ĐĂNG NHẬP</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#" id="btn"><img src='../images/giohang.png' width = "30px" height="30px">
+        						<script language="javascript">
+									var button = document.getElementById("btn");
+            						button.onclick = function(){
+									alert("Mời bạn đăng nhập để tiếp tục...");}		
+								</script>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+<div class="contact-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="contact-form-right">
+                        <h2>GÓP Ý</h2>
+         
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Tên của bạn" required data-error="Hãy nhập tên của bạn">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Email của bạn" id="email" class="form-control" name="name" required data-error="Hãy nhập email của bạn">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" name="name" placeholder="Vấn đề" required data-error="Hãy nhập vấn đề của bạn">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Nhập lời nhắn" rows="4" data-error="Hãy nhập lời nhắn của bạn" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn hvr-hover" id="submit" type="submit">Gửi lời nhắn</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+				<div class="col-lg-5 col-sm-12">
+                    <div class="contact-info-left">
+                        <h2>LIÊN HỆ</h2>
+						<p>Chúng tôi cam kết mang lại những giá trị cao nhất & đồng hồ chính hãng cho khách hàng khi đến với 3TWatch.com</p>
+                        <p>Địa chỉ: 273 An Dương Vương, Phường 4, Quận 5, TpHCM.</p>
+						<p>SĐT: 0823.456.789</p>
+						<p>Gmail: 3TWatch@gmail.com</p>
+						<p>Facebook: https://facebook.com/3TWatch</p>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	<div class="lien-he">
+		<img src='../images/lienhe.png' width="100%">
+	</div>
+	<footer>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+			<tr>
+				<td width="50%"></td>
+				<th width="25%">Thông Tin Liên Hệ</th>
+				<th width="25%">Điều Hướng</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src='../images/logo1.png' width="350px" height="120px" style="margin-left: 200px">
+				</td>
+				<td>273 An Dương Vương, P4, Q5, TP.HCM</td>
+				<td>
+					<a href='../index.html' style="color: black">Trang Chủ</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Fax: 0272.123.121</td>
+				<td>
+					<a href='../donghonam.html' style="color: black">Đồng Hồ Nam</a>
+				</td>
+			</tr>
+			<tr>
+				<td>SĐT: 0823.456.789</td>
+				<td>
+					<a href='../donghonu.html' style="color: black">Đồng Hồ Nữ</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Gmail: 3TWatch@gmail.com</td>
+				<td>
+					<a href='contact.html' style="color: black">Góp Ý</a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+<script type="text/javascript" src="javascript.js"></script>
+</body
+></html>
+
+</body>
+</html>

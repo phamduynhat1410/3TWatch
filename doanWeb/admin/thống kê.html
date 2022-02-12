@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3TWATCH&reg; | thống kê</title>
+<link rel="stylesheet" type="text/css" href="chitietcxl.css">
+<link rel="stylesheet" type="text/css" href="admincss.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+<div class="topnav">
+			<div class="xin-chao">Xin chào Quản trị viên</div>
+			<div class="dang-xuat">
+				<a href="../loginadmin/loginadmin.html">ĐĂNG XUẤT<a>
+			</div>
+		</div>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-branch" href="../index.html">
+					<img style="margin-left: 60px" src="../images/logo1.png" height="60" width="210">
+				</a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link " href="admin.html" > TRANG CHỦ <br> QUẢN TRỊ VIÊN   </a>
+						</li>
+						<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">THÊM/SỬA </br> SẢN PHẨM <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="themsp.html">THÊM SẢN PHẨM</a></li>
+      						<li><a href="suasp.html">SỬA SẢN PHẨM</a></li>
+   
+   						</ul>
+  </div>		
+						<li class="nav-item">
+							<a class="nav-link " href='quanlisp.html'>QUẢN LÍ  SẢN PHẨM </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="thống kê.html">THỐNG KÊ </a>
+						</li>
+						<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">QUẢN LÍ <br> TÀI KHOẢN <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="quanliadmin.html">ADMIN</a></li>
+      						<li><a href="quanlikhachhang.html">KHÁCH HÀNG</a></li>
+   
+   						</ul>
+  </div>		
+				<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">ĐƠN HÀNG <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="dhdaxuli.html">ĐÃ XỬ LÍ </a></li>
+      						<li><a href="dhchuaxuli.html">CHƯA XỬ LÍ</a></li>
+   
+   						</ul>
+  </div>		
+					</ul>
+				</div>
+			</div>
+		</nav>				
+	</header>
+		<form name="timkiemnangcao" action="" method="" onsubmit="return kiemtragia()" >
+		
+				<table>
+					<tr>
+						<td style="width: 8%"></td>
+						<td style="width: 25%">Thương hiệu : 
+						<select style="width: 60%">
+							<option>-----Chọn-----</option>
+							<option>Đồng hồ Casio</option>
+							<option>Đồng hồ Orient</option>
+							<option>Đồng hồ Citizen</option>
+							<option>Đồng hồ G-Shock</option>
+							
+						</select>
+						</td>
+						
+						<td style ="width: 15%" >Lọc giá từ: 
+							<select style="width: 60%">
+							<option>-----Chọn-----</option>
+							<option>Từ 0đ</option>
+							
+							<option>1.000.000</option>
+							
+							<option>2.000.000</option>
+							
+							<option>3.000.000</option>
+							</select>
+						</td>
+						<td style ="width: 15%">Đến
+							<select>
+								<option>----Chọn----</option>
+								<option>1.000.000</option>
+								<option>2.000.000</option>
+								<option>3.000.000</option>
+								<option>Trên 3.000.000</option>
+							</select>
+						</td>
+						
+						<td style="width: 25%">Sắp xếp: 
+							<select style="width: 60%">
+							<option>-----Chọn-----</option>
+							<option>Giá từ thấp tới cao</option>
+							<option>Giá từ cao đến thấp</option>
+							<option>Theo tên từ A đến Z</option>
+							<option>Theo tên từ Z đến A</option>
+							</select>
+						</td>
+					
+						<td>
+										
+						
+ 
+			 <input type="button" id="show-btn" value="Tìm Kiếm" />
+         
+        <script language="javascript">
+            // Lấy đối tượng
+            var button = document.getElementById("show-btn");
+             
+            // Thêm sự kiện cho đối tượng
+            button.onclick = function()
+            {
+              alert("Không có sản phẩm...");
+            };
+        </script>						</td>
+					</tr>
+					
+				</table>
+	
+			</form>
+	<div class = container>
+
+                    <div class="lalala">
+                        <div>
+                            <div><h1 align="center">THỐNG KÊ</h1></div>
+                            <div style="height: 20px"></div>
+
+                            <div>
+                                <table class="table table-bordered">
+                                    <thead class="co">
+                                         <tr >
+                        <th style="width:auto">STT</th>
+                        <th style="width:100px">Mã hàng</th>
+                        <th style="width: auto"> Ảnh minh họa</th>
+                        <th style="width:350px">Tên hàng</th>
+                        <th style="width:auto">Đã bán</th>
+                        <th style="width:auto">Tồn kho</th>
+                        <th style="width:auto">Doanh thu (triệu đồng)</th>
+                        <th style="width:auto">Trạng thái</th>
+                    </tr>
+                                    </thead>
+                                    <tbody class="co">
+                                        <tr >
+                        <td align="center" style="width:auto">1</td>
+                        <td align="center" style="width:auto">3T100 </td>
+                        <td ><img src="../images/1.jpg" width="110px" height="110px" ></td>
+                        <td align="center" style="width:340px">Casio B640WC-5ADF </td>
+                        <td align="center" style="width:auto">50</td>
+                        <td align="center" style="width:70px">30</td>
+                        <td align="center" style="width:auto">50</td>
+                        <td align="center" style="width:auto">Còn hàng</td>
+                    </tr>
+                    <tr >
+                        <td align="center" style="width:auto">2</td>
+                        <td align="center" style="width:auto">3TW101</td>
+                        <td ><img src="../images/2.jpg" width="110px" height="110px" ></td>
+                        <td align="center" style="width:340px">Casio AE-1200WHD-1AVDF</td>
+                        <td align="center" style="width:auto">90</td>
+                        <td align="center" style="width:70px">20</td>
+                        <td align="center" style="width:auto">100</td>
+                        <td align="center" style="width:auto;color:red">Cần nhập</td>
+                    </tr>
+                    <tr >
+                        <td align="center" style="width:auto">3</td>
+                        <td align="center" style="width:auto">3TW102</td>
+                        <td ><img src="../images/3.jpg" width="110px" height="110px" ></td>
+                        <td align="center" style="width:340px">Casio MTP-1374D-1AVDF</td>
+                        <td align="center" style="width:auto">10</td>
+                        <td align="center" style="width:70px">50</td>
+                        <td align="center" style="width:auto">5,6</td>
+                        <td align="center" style="width:auto">Còn hàng</td>
+                    </tr>
+                    <tr >
+                        <td align="center" style="width:auto">4</td>
+                        <td align="center" style="width:auto">3TW103</td>
+                        <td ><img src="../images/4.jpg" width="110px" height="110px" ></td>
+                        <td align="center" style="width:340px">Casio G-SHOCK GA-120-1ADR</td>
+                        <td align="center" style="width:auto">20</td>
+                        <td align="center" style="width:70px">20</td>
+                        <td align="center" style="width:auto">43</td>
+                        <td align="center" style="width:auto;color:red">Hết hàng</td>
+                    </tr>
+                    <tr >
+                        <td align="center" style="width:auto">5</td>
+                        <td align="center" style="width:auto">3TW104</td>
+                        <td ><img src="../images/5.jpg" width="110px" height="110px" ></td>
+                        <td align="center" style="width:340px">Casio A159WGED-1DF </td>
+                        <td align="center" style="width:auto">60</td>
+                        <td align="center" style="width:70px">50</td>
+                        <td align="center" style="width:auto">200</td>
+                        <td align="center" style="width:auto">Còn hàng</td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="right" colspan="8" style="font-size: 20px;padding-right:160px">Tổng doanh thu : 398,6 triệu đồng</td>
+                    </tr>
+
+                </table>
+							</div>
+							 <div class="container-fluid">
+                                <div class="row" align="left">
+                                    <div class="pagination">
+                                        <a class="page" onclick="currentSlide(1)" href="404.html">&laquo;</a>
+                                        <a class="page active" onclick="currentSlide(2)" href="404.html">1</a>
+                                        <a class="page" onclick="currentSlide(3)" href="404.html">2</a>
+                                        <a class="page" onclick="currentSlide(4)" href="404.html">3</a>
+                                        <a class="page" onclick="currentSlide(5)" href="404.html">&raquo;</a>
+                                    </div>
+                                    <script type="text/javascript" src="js/phantrang.js"></script>
+								</div>
+									 
+		</div>		
+														
+		</div>
+							</div>	
+							</div>
+                                 
+	<!--  PHAN ket    -->
+<div class="lien-he" align="center">
+											 
+		<img src="../images/lienhe.png" width="100%">
+	</div>
+	 
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	<footer>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+			<tr>
+				<td width="50%"></td>
+				<th width="25%">Thông Tin Liên Hệ</th>
+				<th width="25%" style="margin-right: 100px: ">Điều Hướng</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="../images/logo1.png" width="300px" height="120px" style="margin-left: 50px">
+				</td>
+				<td>273 An Dương Vương, P4, Q5, TP.HCM</td>
+				<td>
+					<a href="../index.html" style="color: black">Trang Chủ</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Fax: 0272.123.121</td>
+				<td>
+					<a href="../donghonam.html" style="color: black">Đồng Hồ Nam</a>
+				</td>
+			</tr>
+			<tr>
+				<td>SĐT: 0823.456.789</td>
+				<td>
+					<a href="../donghonu.html" style="color: black">Đồng Hồ Nữ</a>
+				</td>
+			</tr>
+									 
+				 
+		
+				
+			<tr>
+				<td></td>
+				<td>Gmail: 3TWatch@gmail.com</td>
+				<td>
+					<a href='../form/contact.html' style="color: black">Góp Ý</a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+<script type="text/javascript" src="js.js"></script>
+
+                                   
+
+</body>
+</html>

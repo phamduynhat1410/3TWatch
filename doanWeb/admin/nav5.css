@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+font-family:font_strong;
+src:url('"file:///E:/doanWeb/UVNBayBuom_B.TTF"') format(‘truetype’),
+url(‘../fonts/Captureit.eot#iefix’) format(’embedded-opentype’),
+url(‘../fonts/Captureit.woff’) format(‘woff’);
+font-weight:normal;
+ font-style:normal;
+}
+.xin-chao{
+	text-align: right;
+	margin-right: 10px;
+	color: red;
+	font-weight: bold;
+}
+.dang-xuat{
+	text-align: right;
+	margin-right: 10px;
+	color: blue;
+	font-weight: bold;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+}
+
+.navbar{
+	background-color: #EEEEEE !important;
+	
+	
+}
+.navbar li a{
+	color: black !important;
+	text-align: center;
+}
+.navbar li a:hover{
+	color: red!important;
+}
+/*Hieu ung back to top*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+.dropdown{
+	margin-top: 10px;
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+<!--------------------khung----------------->
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box ;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+
+}
+
+#contentadmin
+ {
+	 background-color:#ffffff;
+	 width:1150px;
+	 margin: auto;
+	 margin-top: 50px;
+	 margin-bottom:30px;
+	 box-shadow: 0px 0px 10px grey;
+	 padding-bottom:30px;
+	/* border-top:1px solid white;*/
+
+ }
+
+
+
+/*===================================================MAIN================================================================= */
+.khung_sp_header {
+  padding-bottom: 30px;
+  clear: both;
+  padding-top: 30px;
+  
+}			
+.small_txt{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    text-align: center;
+}
+.long_hr{
+  display: inline-block;
+  width: 340px;
+  height: 1px;
+  border: 0;
+  background: rgb(191, 191, 191);
+  margin-bottom: 8px;
+}
+
+.khung_sp {
+  width: 100%;
+  padding-right: 15%;
+  padding-left: 15%;
+
+}
+.small_hr{
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  border: 0;
+  background: rgb(191, 191, 191);
+  margin-bottom: 8px;
+}
+
+.dangky{
+	float: left;
+	padding-bottom: 100px;
+	width: 1490px;
+}
+.dangky1{
+	right: 200px;
+	float:left;
+	padding: 20px;
+}
+.item-dk{
+	 padding: 10px;
+}
+.input-l{
+	width: 300px;
+	height: 40px;
+	text-indent: 10px;
+	border-radius: 10px;
+	border: 1px solid rgb(193, 193, 193);
+}
+.font-dk{
+	font-size: 15px;
+	color: rgb(94, 94, 94);
+}
+.dk-fb:hover,.dk-g:hover{
+	opacity: 0.7;
+}
+.item-ns{
+	float: left;
+	padding:0 10px 0 0;
+}
+.input-ns{
+	width: 210px;
+	height: 32px;
+	border: 1px solid rgb(193, 193, 193);
+	border-radius: 5px;
+}
+.gt{
+	height: 34px;
+	width: 80px;
+	border: 1px solid rgb(193, 193, 193);
+	border-radius: 5px;
+}
+.submit-dk{
+	width: 300px;
+	height: 35px;
+	background: #F39201;
+	color: aliceblue;
+	border-radius: 5px;
+	border: none;
+}
+.submit-dk:hover{
+	background: #FBAE00;
+	transition-duration: 0.5s;
+}
+.dk-fb{
+	width: 210px;
+	height: 40px;
+	color: aliceblue;
+	background: #3b5998;
+	border-radius: 8px;
+	border: none;
+	transition: 0.3s;
+}
+.dk-g{
+		width: 210px;
+	height: 40px;
+	color: aliceblue;
+	background: #d34836;
+	border-radius: 8px;
+	border: none;
+	transition: 0.3s;
+}
+#main1
+{
+	padding-top:30px;
+    width:100%;
+	height:500px;
+	margin: 2 auto;
+	margin-top:30px;
+}
+
+@charset "utf-8";
+/* CSS Document */
+.containerr {
+    margin-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+#chonanh {
+    padding-left: 1em;
+    padding-right: 100px;
+}
+.suasanpham{
+    margin-left: 650px;
+}
+.theh1 h1{
+    margin-left: 0px;
+    color: #935b55;
+}
+.mota textarea{
+    width: 450px;
+}
+.motact{
+    margin-top: 18px;
+}
+.input-group input{
+    width: 40px;
+}
+.input-group-addon{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.nutthem{
+    margin-left: 120px;
+}
+.nutthem button{
+     background-color: #e2cbc8;
+     border: #935b55 1px solid;
+     color: #935b55;
+
+}
+.nutthem button:hover{
+    background-color: #d1aba7;
+    color: #935b55;
+    font-weight: 600;
+    border: #935b55 1px solid;
+}
+.form-group input:focus{
+    outline: #935b55 !important;
+    border: #935b55 1px solid;
+	width: 250px;
+}
+.kichco select{
+    width: 340px;
+}

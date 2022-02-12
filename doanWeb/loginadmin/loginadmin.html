@@ -1,0 +1,250 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head --><head>
+
+<title>3TWATCH&reg; | Login</title>
+
+<!-- Meta-Tags -->
+<script src='js/all111.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Existing Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- Style --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<!-- Fonts -->
+<link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<!-- //Fonts -->
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+	<h1 style="color: crimson" height="150px"> XIN CHÀO ADMIN 3TWATCH</h1>
+	<div class="w3layoutscontaineragileits">
+	<h2>Đăng nhập admin</h2>
+		<form action="../admin/admin.html" method="post">
+			<input type="email" Name="Username" placeholder="Nhập địa chỉ Email..." required="">
+			<input type="password" Name="Password" placeholder="Nhập mật khẩu ..." required="">
+			<ul class="agileinfotickwthree">
+				<li>
+					<input type="checkbox" id="brand1" value="">
+					<label for="brand1"><span></span>Nhớ mật khẩu </label>
+					<a href="#">Quên mật khẩu ?</a>
+				</li>
+			</ul>
+			<div class="aitssendbuttonw3ls">
+				<input id="lo-gin" type="submit"  value="Đăng nhập">
+				<p> Đăng kí tài khoản Admin <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Nhấn vào đây </a></p>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+	<script>
+		var input= document.getElementById("lo-gin");
+		input.onclick=function(){
+			alert("Chào mừng Admin");
+			
+		}	;
+	</script>
+	 <script type="text/javascript">
+            var login = document.getElementById("login");
+            var signin = document.getElementById("signin");
+            var signin_btn = document.getElementById("signin-btn");
+            var out_login = document.querySelector(".out-login");
+            signin.onclick = function(){
+                login.style.display = "block";
+            }
+            out_login.onclick = function()
+            {
+                login.style.display = "none";
+            }
+            signin_btn.onclick = function()
+            {
+                login.style.display = "block";
+            }
+        </script>
+       
+    <script type="text/javascript">
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        var key = document.getElementsByClassName("key");
+        // Get the navbar
+        var navbar = document.getElementById("nav-bar");
+    
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            for(i = 0 ;i < key.length ; i++)
+            {
+                key[i].style.background = "rgb(246, 255, 236)";
+            }
+            navbar.style.color = "green";
+        } else {
+            navbar.classList.remove("sticky");
+            for(i = 0 ;i < key.length ; i++)
+            {
+                key[i].style.background = "white";
+            }
+        }
+    }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.input-number-increment').click(function() {
+        var $input = $(this).parents('.input-number-group').find('.input-number');
+        var val = parseInt($input.val(), 10);
+        $input.val(val + 1);
+        });
+    
+        $('.input-number-decrement').click(function() {
+        var $input = $(this).parents('.input-number-group').find('.input-number');
+        var val = parseInt($input.val(), 10);
+        if(val === 0)
+        {
+            return
+        }
+        else
+            $input.val(val - 1);
+        
+        })
+    })
+    </script>
+     <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+    
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+    </script>
+
+<script>
+    $(document).ready(function() 
+    {
+    var scrollTop = $(".scrollTop");
+    $(window).scroll(function() {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) 
+    {
+        $(scrollTop).css("display", "block");
+    } else 
+    {
+        $(scrollTop).css("display", "none");
+    }
+
+    }); // scroll END
+
+//Click event to scroll to top
+$(scrollTop).click(function() {
+    $('html, body').animate({
+    scrollTop: 0
+    }, 100);
+    return false;
+
+}); // click() scroll top EMD
+});
+</script>
+	<!-- for register popup -->
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="contact-form1">
+			<div class="contact-w3-agileits">
+				<h3>ĐĂNG KÍ </h3>
+				<form action="#" method="post">
+						<div class="form-sub-w3ls">
+							<input placeholder="Họ Và Tên"  type="text" required="">
+							<div class="icon-agile">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Địa chỉ Email" class="mail" type="email" required="">
+							<div class="icon-agile">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Mật Khẩu"  type="password" required="">
+							<div class="icon-agile">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Nhập lại mật khẩu"  type="password" required="">
+							<div class="icon-agile">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+							</div>
+						</div>
+					<div class="login-check">
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Bạn đã đồng ý với điều khoản của chúng tôi</label>
+					</div>
+					<div class="submit-w3l">
+						<input id="dang-ki" type="submit" value="Đồng ý">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<!-- //for register popup -->
+	
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script>
+	var input = document.getElementById("dang-ki");
+		input.onclick = function(){
+			alert("Đăng kí thành công");
+		};
+	</script>
+
+	<!-- pop-up-box-js-file -->  
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--//pop-up-box-js-file -->
+	<script>
+		$(document).ready(function() {
+		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+																		
+		});
+	</script>
+
+</body>
+<!-- //Body -->
+
+</html>

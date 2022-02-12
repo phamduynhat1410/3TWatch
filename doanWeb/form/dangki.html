@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<title>3TWATCH&reg; | Shop Đồng Hồ - Đồng Hồ Chất Lượng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="sanpham.css">
+</head>
+<body>
+	<div class="tim-kiem">
+		<div class="search-container">
+			<table style="margin-left: 1205px">
+				<td>
+				<input type="text" placeholder="Tìm kiếm.." name="search">
+				</td>
+				<td>
+				<button><a href="timkiem.html" style="width: 60px; height: 25px; color: black">Nâng Cao</a></button>
+				</td>
+			</table>
+		</div>
+	</div>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-branch" href="../index.html">
+					<img src="../images/logo1.png" style="margin-left: 50px"height="60" width="210">
+				</a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a id="trang-chu" class="nav-link " href="../index.html">TRANG CHỦ</a>
+						</li>
+						<li>
+							<div class="dropdown">
+    							<a id="thuong-hieu" style="border-color: #EEEEEE; background-color: #EEEEEE" class="dropdown-toggle"  data-toggle="dropdown" href="#thuong-hieu">THƯƠNG HIỆU <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="../dhocasio.html">Đồng Hồ Casio</a></li>
+      						<li><a href="../dhoorient.html">Đồng Hồ Orient</a></li>
+     						<li><a href="../dhocitizen.html">Đồng Hồ CitiZen</a></li>
+							<li><a href="../dhogshock.html">Đồng Hồ G-Shock</a></li>
+   						</ul>
+  </div>		
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="../donghonam.html">NAM</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="../donghonu.html">NỮ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='contact.html'>LIÊN HỆ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href='../login.html'>ĐĂNG NHẬP</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#" id="btn"><img src="../images/giohang.png" width = "30px" height="30px">
+        						<script language="javascript">
+									var button = document.getElementById("btn");
+            						button.onclick = function(){
+									alert("Mời bạn đăng nhập để tiếp tục...");}	
+								</script>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+<div id="advertise">
+					
+					<div id="dangky" style="text-align:center" >
+						<form name="formdangky"  action="admin.html" method="post"  onsubmit="return submitdangky()">
+							<fieldset>
+								<legend><font style="font-size:2em;font-style:bold;color:red;style="text- align:center >Đăng Ký</font></legend>
+									<table style="margin:auto;width:90%;">
+									<tr><td colspan="1"><b>Thông tin đăng nhập:</b></td></tr>
+									<tr>
+										<td align="right">Tên đăng nhập :</td>
+										<td align="center"><input type="text" name="tendangnhap" > &nbsp  (<font color="red">*</font>)</td>
+									</tr>
+									<tr>
+										<td align="right">Mật khẩu :</td>
+										<td><input type="password" name="matkhau" > &nbsp (<font color="red">*</font>)</td>
+									</tr>
+									<tr>
+									<td></td>
+									<td style="font-size:0.8em"><i>(Mật khẩu ít nhất 6 ký tự)</i></td>
+									</tr>
+									<tr>
+										<td align="right">Nhập lại mật khẩu :</td>
+										<td><input type="password" name="nhaplaimatkhau"> &nbsp (<font color="red">*</font>)</td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+									</tr>
+									<tr>
+										<td colspan="1"><b>Thông tin cá nhân:</b></td>
+									</tr>
+									<tr>
+										<td align="right"> Họ và tên:</td>
+										<td><input type="text" name="hovaten"> &nbsp (<font color="red">*</font>) </td>
+									</tr>
+									<tr>
+										<td align="right">Ngày sinh: </td>
+										<td>
+											<select name="ngaysinh">
+												<option value="0">Chọn ngày</option>
+												<script>
+													for(i=1;i<=31;i++)
+													{
+														document.write('<option value="'+i+'">'+i+'</option>');
+													
+													}
+												</script>
+											</select>
+											<select name="thangsinh">
+												<option value="0">Chọn tháng</option>
+												<script>
+													for(i=1;i<=12;i++)
+													{
+														document.write('<option value="'+i+'">'+i+'</option>');
+													
+													}
+												</script>
+												<input type="text" name="namsinh" placeholder="Nhập năm sinh" style="width:140; margin-left:4px">
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td align="right"> Giới tính:</td>
+										<td> 
+											<input type="radio" name="gioitinh" value="nam" checked>Nam &nbsp &nbsp
+											<input type="radio" name="gioitinh" value="nu">Nữ
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+									</tr>
+									<tr>
+										<td><b>Nhập thông tin lấy lại mật khẩu:</b></td>
+									</tr>
+									<tr>
+										<td align="right">Câu hỏi bí mật :</td>
+										<td>
+											<select name="cauhoi">
+												<option>Chọn câu hỏi</option>
+												<option>Rank League of Legend</option>
+												<option>GG</option>
+												<option>Tuổi gì</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td align="right">Trả lời :</td>
+										<td><input type="text" name="traloi"></td>
+									</tr>
+									<tr>
+									    <td></td><td><p id="kiemtra" style="color: red;text-align: center; width: 300px;"></p></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+									</tr>
+									
+								
+    </div>
+									</table>
+							</fieldset>
+						</form>
+							<td>
+								<a href="../index.html">
+									<input type="button" value="Đăng ký" align="middle">
+									</a>
+											<input type="reset" value="Đặt lại" align="middle">
+										</td>
+									</tr>
+									<div class="dangky1" align="center">
+
+					</div>
+			</div>
+			          <div class="item-dk" align="center">
+            <p class="font-dk">Hoặc đăng kí với:</p>
+          </div>
+          <div class="Menu_top " align="center">
+          	<a href="http://www.facebook.com/login.php?" target="_blank">
+             <input class="dk-fb" type="button" name="dk-fb" value="FACEBOOK">
+            </a>
+          	 <a href="https://accounts.google.com" target="_blank">
+            <input class="dk-g" type="button" name="dk-g" value="GOOGLE">
+			  </a>
+      </div>
+      
+      
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	  <div class="lien-he" align="center">
+		<img src="../images/lienhe.png" width="100%">
+	</div>
+	<footer>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+			<tr>
+				<td width="50%"></td>
+				<th width="25%">Thông Tin Liên Hệ</th>
+				<th width="25%">Điều Hướng</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="../images/logo1.png" width="350px" height="120px" style="margin-left: 200px">
+				</td>
+				<td>273 An Dương Vương, P4, Q5, TP.HCM</td>
+				<td>
+					<a href="../index.html" style="color: black">Trang Chủ</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Fax: 0272.123.121</td>
+				<td>
+					<a href="../donghonam.html" style="color: black">Đồng Hồ Nam</a>
+				</td>
+			</tr>
+			<tr>
+				<td>SĐT: 0823.456.789</td>
+				<td>
+					<a href="../donghonu.html" style="color: black">Đồng Hồ Nữ</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Gmail: 3TWatch@gmail.com</td>
+				<td>
+					<a href='contact.html' style="color: black">Góp Ý</a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+<script type="text/javascript" src="../javascript.js"></script>
+</body>
+</html>
+
+</body>
+</html>

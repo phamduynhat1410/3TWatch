@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3TWATCH&reg; | Thêm SP</title>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="admincss.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<body>
+	
+		<div class="topnav">
+			<div class="xin-chao">Xin chào Quản trị viên</div>
+			<div class="dang-xuat">
+				<a href="../loginadmin/loginadmin.html">ĐĂNG XUẤT<a>
+			</div>
+		</div>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-branch" href="../index.html">
+					<img style="margin-left: 60px" src="../images/logo1.png" height="60" width="210">
+				</a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link " href="admin.html" > TRANG CHỦ <br> QUẢN TRỊ VIÊN   </a>
+						</li>
+						<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">THÊM/SỬA </br> SẢN PHẨM <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="themsp.html">THÊM SẢN PHẨM</a></li>
+      						<li><a href="suasp.html">SỬA SẢN PHẨM</a></li>
+   
+   						</ul>
+  </div>		
+						<li class="nav-item">
+							<a class="nav-link " href='quanlisp.html'>QUẢN LÍ  SẢN PHẨM </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="thống kê.html">THỐNG KÊ </a>
+						</li>
+						<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">QUẢN LÍ <br> TÀI KHOẢN <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="quanliadmin.html">ADMIN</a></li>
+      						<li><a href="quanlikhachhang.html">KHÁCH HÀNG</a></li>
+   
+   						</ul>
+  </div>	
+				<div class="dropdown">
+    							<a  class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color: black">ĐƠN HÀNG <span class="caret"></span></a>
+    					<ul class="dropdown-menu">
+     						<li><a href="dhdaxuli.html">ĐÃ XỬ LÍ </a></li>
+      						<li><a href="dhchuaxuli.html">CHƯA XỬ LÍ</a></li>
+   
+   						</ul>
+  </div>		
+					
+					</ul>
+				</div>
+			</div>
+		</nav>				
+	</header>
+				
+       	 <div class="col-md-9">
+                    <div class="containerr">
+                        <div class="container-fluid">
+                            <div class="suasanpham" >
+                             <div class="theh1" align="center"><h1>SỬA SẢN PHẨM</h1></div>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-6">Tên Sản Phẩm:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <label class="control-label col-md-6">Ảnh sản phẩm:</label>
+                                <div id="chonanh">
+
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Chọn ảnh cho sản phẩm</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="motact control-label col-md-3">Mô tả chi tiết:</label>
+                                    <div class="mota col-sm-9">
+                                        <textarea name="description" class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="motact control-label col-md-3">Thông số kĩ thuật:</label>
+                                    <div class="mota col-sm-9">
+                                        <textarea name="description" class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-9">Giá tiền:</label>
+                                    <div class="col-sm-3 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="price"> <span class="input-group-addon">VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="nutthem col-md-offset-3 col-sm-9">
+                                        <button id="cap-nhat" type="reset" class="btn btn-primary">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--  PHAN ket    -->
+			<script>
+				var button = document.getElementById("cap-nhat");
+				button.onclick = function(){
+					alert("Cập nhật thành công");
+				};
+			</script>
+
+	  <div class="lien-he" align="center">
+		<img src="../images/lienhe.png" width="100%">
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	<footer>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+			<tr>
+				<td width="50%"></td>
+				<th width="25%">Thông Tin Liên Hệ</th>
+				<th width="25%">Điều Hướng</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="../images/logo1.png" width="350px" height="120px" style="margin-left: 200px">
+				</td>
+				<td>273 An Dương Vương, P4, Q5, TP.HCM</td>
+				<td>
+					<a href="../index.html" style="color: black">Trang Chủ</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Fax: 0272.123.121</td>
+				<td>
+					<a href="../donghonam.html" style="color: black">Đồng Hồ Nam</a>
+				</td>
+			</tr>
+			<tr>
+				<td>SĐT: 0823.456.789</td>
+				<td>
+					<a href="../donghonu.html" style="color: black">Đồng Hồ Nữ</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Gmail: 3TWatch@gmail.com</td>
+				<td>
+					<a href="#" style="color: black">Góp Ý</a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+<script type="text/javascript" src="js.js"></script>
+</body
+</html>
